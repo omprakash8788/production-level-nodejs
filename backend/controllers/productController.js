@@ -1,44 +1,68 @@
 const Product = require("../models/Product");
-
+const asyncHandler = require("express-async-handler");
 //@desc Get all products
 //route GET /api/products
 //@access Public
 
-const getAllProducts = async (req, res) => {
-  try {
-    const products = await Product.find();
-    res.status(200).json({
-      success: true,
-      data: products,
-      message: "Products fetched successfully",
-    });
-  } catch (error) {
-    res.status(500).json({ success: false, message: "Server Error" });
-  }
-};
+// const getAllProducts = async (req, res) => {
+//   try {
+//     const products = await Product.find();
+//     res.status(200).json({
+//       success: true,
+//       data: products,
+//       message: "Products fetched successfully",
+//     });
+//   } catch (error) {
+//     res.status(500).json({ success: false, message: "Server Error" });
+//   }
+// };
+
+const getAllProducts = asyncHandler(async (req, res) => {
+  const products = await Product.find();
+  res.status(200).json({
+    success: true,
+    data: products,
+    message: "Fetched all products successfully",
+  });
+});
 
 //@desc Create a new product
 //@route POST /api/products
 //@access Public
-const createProduct = async (req, res) => {
-  try {
-    const { name, price, category, tags } = req.body;
-    if (!name || !price || !category || !tags) {
-      return res.status(400).json({
-        success: false,
-        message: "Name and price are required",
-      });
-    }
-    const newProduct = await Product.create({ name, price, category, tags });
-    res.status(201).json({
-      success: true,
-      data: newProduct,
-      message: "Product created successfully",
-    });
-  } catch (error) {
-    res.status(500).json({ success: false, message: "Server Error" });
+// Try and catch
+// const createProduct = async (req, res) => {
+//   try {
+//     const { name, price, category, tags } = req.body;
+//     if (!name || !price || !category || !tags) {
+//       return res.status(400).json({
+//         success: false,
+//         message: "Name and price are required",
+//       });
+//     }
+//     const newProduct = await Product.create({ name, price, category, tags });
+//     res.status(201).json({
+//       success: true,
+//       data: newProduct,
+//       message: "Product created successfully",
+//     });
+//   } catch (error) {
+//     res.status(500).json({ success: false, message: "Server Error" });
+//   }
+// };
+
+const createProduct = asyncHandler(async (req, res) => {
+  const { name, price, category, tags } = req.body;
+  if (!name || !price || !category) {
+    res.status(400);
+    throw new Error("Name, price, and category are required.");
   }
-};
+  const product = await Product.create({ name, price, category, tags });
+  res.status(201).json({
+    success: true,
+    data: product,
+    message: "Product created successfully",
+  });
+});
 
 module.exports = {
   getAllProducts,
