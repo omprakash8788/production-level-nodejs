@@ -10,6 +10,7 @@ app.use(express.json());
 // app.use('/api/products', productRoutes)
 // Routes
 
+
 app.use("/api/products", productRoutes);
 app.use((req, res, next) => {
   const AppError = require("./utils/appError");
