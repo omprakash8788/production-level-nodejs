@@ -107,6 +107,7 @@ const getAllProducts = asyncHandler(async (req, res) => {
   // .sort(sortBy.split(",").join(""))
   // .skip(skip)
   // .limit(limit);
+  // work
 
   res.status(200).json({
     success: true,
