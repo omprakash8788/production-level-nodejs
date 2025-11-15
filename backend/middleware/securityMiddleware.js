@@ -7,4 +7,5 @@ const applySecurityMiddleware = (app) => {
   app.use(cors());
 };
 
+
 module.exports = applySecurityMiddleware;
