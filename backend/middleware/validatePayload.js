@@ -13,5 +13,6 @@ const validateProduct = (req, res, next) => {
     });
   }
   next();
+  
 };
 module.exports = validateProduct;
