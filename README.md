@@ -1,8 +1,8 @@
 # Mastering Node.js Backend Development — Summary & Project Notes
 
-This repository contains my complete learning journey, notes, and implementations from the book **_Mastering Node.js Backend Development**.
+This repository contains complete learning journey, notes, and implementations.
 
-The book covers a full backend development roadmap — from fundamentals to production-level topics including MVC architecture, REST API design, authentication, error handling, security, and deployment.
+The covers a full backend development roadmap — from fundamentals to production-level topics including MVC architecture, REST API design, authentication, error handling, security, and deployment.
 
 ---
 
