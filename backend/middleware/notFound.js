@@ -3,5 +3,6 @@ const notFound = (req, res, next) => {
     success: false,
     message: `Route ${req.originalUrl} not found`,
   });
+  
 };
 module.exports = notFound;
