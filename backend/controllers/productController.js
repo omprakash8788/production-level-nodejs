@@ -74,7 +74,7 @@ const getAllProducts = asyncHandler(async (req, res) => {
   };
 
   const totalItems = await Product.countDocuments(filter);
-  const totalPages = Math.ceil(totalItems / limit);
+  const totalPages = Math.ceil(totalItems / limit); 
   const skip = (page - 1) * limit;
 
   const products = await Product.find(filter)
