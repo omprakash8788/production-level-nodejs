@@ -2,6 +2,7 @@ const Product = require("../models/Product");
 const asyncHandler = require("express-async-handler");
 const mongoose = require("mongoose");
 
+
 //@desc Update product (PUT or PATCH)
 //@route PUT /api/products/:id
 // @route PATCH /api/products/:id
