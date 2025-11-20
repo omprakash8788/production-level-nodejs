@@ -1,8 +1,17 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "homepage": "https://github.com/omprakash8788/production-level-nodejs/blob/main/README.md",
   "description": "",
   "main": "index.js",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/omprakash8788/production-level-nodejs"
+  },
+  "bugs": {
+    "url": "https://github.com/omprakash8788/production-level-nodejs/issues",
+    "email": "omprakashkumar552@gmail.com"
+  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
@@ -14,7 +23,7 @@
     "production level"
   ],
   "author": "omprakash",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "@omprakashkumar/product-zoom": "^1.0.12",
