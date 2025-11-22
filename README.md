@@ -15,6 +15,9 @@ The covers a full backend development roadmap — from fundamentals to productio
 [![VS Code](https://img.shields.io/badge/IDE-VS%20Code-blue.svg)](https://code.visualstudio.com/)
 
 ---
+ <img width="1137" height="639" alt="image" src="https://github.com/user-attachments/assets/ac418ca1-d369-4702-b883-c33a2061f9b7" />
+
+---
 
 ## 📚 What Learned
 
