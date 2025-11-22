@@ -6,6 +6,16 @@ The covers a full backend development roadmap — from fundamentals to productio
 
 ---
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node Version](https://img.shields.io/badge/Node-20.x-green.svg)](https://nodejs.org/)
+[![Express Version](https://img.shields.io/badge/Express-4.x-lightgrey.svg)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green.svg)](https://www.mongodb.com/)
+[![Backend-Node.js](https://img.shields.io/badge/Backend-Node.js-yellowgreen.svg)](https://nodejs.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
+[![VS Code](https://img.shields.io/badge/IDE-VS%20Code-blue.svg)](https://code.visualstudio.com/)
+
+---
+
 ## 📚 What Learned
 
 ### **✔ Core Backend Foundations**
